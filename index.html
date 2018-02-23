@@ -1,49 +1,86 @@
 <!DOCTYPE HTML>
     <html lang="fr">
         <head>
+            <meta charset="utf-8">
             <tilte>
             
             </tilte>
              <link rel="stylesheet" href="css/style.css">
+            <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebasneueregular" type="text/css"/> 
         </head>
         <body>
-            <div class="header">
-                <div class="menu">
-                    <ul id="navigation">
-                        <li><a href="#" title="accueil">Acceuil</a></li>
-                        <li><a href="#" title="titre 1">Titre 1</a></li>
-                        <li><a href="#" title="contact">Contact</a></li>
-                    </ul>
-                </div>
+            <div id="header">
+                <img src="img/dofus.png" width="200" alt="Logo du jeu Dofus"/> 
+                <input id="recherche" type="search" placeholder="Recherche" name="recherche">
+                <ul id="navigation">    
+                     
+                    <li><a href="#" title="accueil">Acceuil</a></li>
+                    <li><a id="titreMenu" href="#" title="titre 1">Xélor</a></li>
+                    <li><a href="#" title="contact">Contact</a></li>
+                </ul>
+               
             </div>
-            <div class="corp">
-                <h1> Titre 1 </h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id libero egestas, blandit velit at, convallis enim. Phasellus consequat magna ac pretium elementum. Proin et mauris at elit rutrum suscipit. Quisque tempus sem eget viverra euismod. Nullam sagittis vel eros laoreet egestas. Cras eu nulla et orci eleifend pretium nec ut lacus. Vivamus tempus risus vel sapien pharetra maximus. Nullam fringilla diam vitae eros aliquam viverra. Morbi vel mauris quis justo varius vehicula non ut erat. Fusce tempor volutpat tortor, eget efficitur risus. In sit amet mattis lorem. 0
+      
+
+            <div id="corp">
+                <img id="baniere" src="img/baniere.jpeg" alt="Baniere représentant des personnages du jeu Dofus"/>          
+                <h1> Xélor </h1>
+                <p>Les Xélors sont des mages qui maîtrisent le temps et toutes les mécaniques qui donnent l'heure : carillons, horloges et pendules leur obéissent au doigt et à l'œil.
+Les Xélors jouent donc avec le temps pour ralentir un ennemi ou se téléporter où bon leur semble. 
                 </p>
-                <h2>Titre 1</h2>
-                <p>Description 1</p>
-                <h2>Titre 2</h2>
-                <p>Description 2</p>
-                <h2>Titre 3</h2>
-                <p>Description 3</p>
-                <h2>Titre 4</h2>
-                <p>Description 4</p>
-                <h2>Titre h2</h2>
-                <h2>Titre h2</h2>
-                <div class="formulaire">
+            </div>
+            <div id="images">
+                <ul>
+                    <li>
+                        <img src="img/1.png" width=100 alt="LOgo du jeu Dofus"/>
+                        <h2 id="placement">Placement</h2>
+                        <p>Déplace alliés et ennemis en manipulant le temps.</p>
+                    </li><li>
+                        <img src="img/2.png" width=100 alt="LOgo du jeu Dofus"/>
+                        <h2 id="entrave">Entrave</h2>
+                        <p>Retire des points d'action.</p>
+                    </li><li>                        
+                        <img src="img/3.png" width=100 alt="LOgo du jeu Dofus"/>
+                        <h2 id="dégats">Dégats</h2>
+                        <p>Optimise ses dégats en manipulant le temps.</p>
+                    </li><li>
+                        <img id="i4" src="img/4.png" width=100 alt="LOgo du jeu Dofus"/>
+                        <h2 id="amé">Amélioration</h2>
+                        <p>Augmente les points d'action.</p>
+                    </li>
+                </ul>
+            </div>
+                <div id="formulaire">
                     <h2>Formulaire</h2>
                     <form>
-                        <input type="text" name="prénom" placeholder="Prénom"/>
-                        <input type="text" name="nom" placeholder="Nom"/>
-                        <input type="date" name="date"/>
-                        <input type="email" name="mail" placeholder="Adresse email"/>
-                        <input type="image" src="img/#"/>
-                        <textarea></textarea>
-                        <input type="submit" name="envoyer"/>
+                        <ul>
+                            <li>
+                                <input id="prenom" type="text" name="prénom" placeholder="Prénom"/>
+                                <input id="nom" type="text" name="nom" placeholder="Nom"/>
+                            </li>
+                            
+                            <li>
+                                <input id ="date" type="date" name="date"/>
+                                <input id ="villenaiss" type="text" placeholder="Ville de Naissance"/>
+                            <li>
+                                <textarea id="area"></textarea>
+                            </li>   
+                            
+                            <li>
+                                <input id="email" type="email" name="mail" placeholder="Adresse email"/>
+                            </li>
+                        
+                            <li>
+                                <input id="envoyer" type="submit" value="Envoyer"/>
+                            </li>
+                            
+                        </ul>
                     </form>
                 </div>
+            <div id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2527.08855094354!2d3.1578698516997643!3d50.69974127941004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c328de10544e45%3A0xb2b01f892ff7a047!2sAnkama!5e0!3m2!1sfr!2sfr!4v1518792929532" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
-            <div class="footer">
+            <div id="footer">
                 <p>Comello Baptiste TPC</p>
             </div>
         </body>
