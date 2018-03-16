@@ -32,6 +32,7 @@ body{
 #recherche{
     vertical-align:middle;
     display:inline-block;
+    margin-right:2%;
 }
 #navigation{
     vertical-align:middle;
@@ -208,7 +209,8 @@ iframe{
 	margin-top:2.8%;
 	display:inline-block;
 	float:right;
-	width:30%;	
+	width:70%;	
+	text-align:right;
 }
 
 @media screen and (max-width:1024px){
@@ -273,6 +275,7 @@ body #header ul li{
 	width:100%;
 	float:none;
 	margin-bottom:3%;
+	text-align:center;
 }
 
 
