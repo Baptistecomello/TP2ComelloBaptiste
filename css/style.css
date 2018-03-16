@@ -24,25 +24,29 @@ body{
 }
 #header{
     border-bottom:solid black 1px;
-    height:85px;
     width:100%;
     background-image: url("../img/background.png");
     background-repeat:no-repeat;
+    background-size:100% 100%;
 }
 #recherche{
-    margin-top:1.5%;
-    float:right;
-    margin-right:2%;
+    vertical-align:middle;
+    display:inline-block;
 }
 #navigation{
-    float:right;
-    margin-top:1.25%;
+    vertical-align:middle;
     margin-right:2%;
 }
 
 body #header ul li{
     float:right;
     list-style-type:none;
+
+}
+
+#header ul{
+    display:inline-block;
+    padding:0	
 }
 
 body ul #titreMenu{
@@ -189,82 +193,176 @@ iframe{
 }
 
 
-}
-#dégats{
+
+#degats{
     color:#9b2d2f;
     text-shadow: 1px 3px 11px rgba(151, 14, 23, 1);
 }
 
 #amé{
-    color:#186399;
+    color:#186399;      
     text-shadow: 1px 3px 11px rgba(15, 59, 89, 1);
 }
 
-@media screen and (max-width:1024px){
-    #images ul li {
-        width:50%;
-    }
-    
-    #corp {
-        text-align:center;
-    }
-    
-    #header{
-        text-align:center;
-    }
-    
-    #header input{
-        display:block;
-        float:none;
-    }
+#navigations{
+	margin-top:2.8%;
+	display:inline-block;
+	float:right;
+	width:30%;	
+}
 
-    #navigation{
-        display:block;
-        float:none; 
-    }
-    
-    #header img{
-        margin-left:0%;
-    }
-        
+@media screen and (max-width:1024px){
+#images ul li {
+    width:50%;
 }
+    
+#corp {
+    text-align:center;
+}
+    
+#header{
+    text-align:center;
+}
+    
+#header input{
+    display:inline-block;
+}
+
+#navigation{
+    display:block;
+    float:none; 
+}
+    
+#header img{
+	display:block;
+    margin:auto;
+}
+
+#navigation{
+	float:none;
+	margin:auto;
+	width:40%;
+	margin-left:0%:	
+}
+
+#navigation ul li{
+	float:none;
+}
+
+#navigation ul li{
+	padding:0;
+}
+
+
+body #header ul li{
+	float:none;
+	display:inline-block;
+}
+
+#recherche{
+	margin-left:0%;
+}
+
+#baniere{
+	display:block;
+	margin:auto;
+	margin-top:5%;
+}
+ 
+#navigations{
+	width:100%;
+	float:none;
+	margin-bottom:3%;
+}
+
+
+
+
 @media screen and (max-width:450px){
-   #header ul li {
-        display:none;
-    }
-    
-    #baniere{
-        width:30%;
-        margin-top:10%;  
-    }
-            
-    #header input{
-        display:none;
-    }
-    
-    #images ul{
-        padding:0;
-    }
-    #formulaire{
-        width:95%;
-        border-left:none;
-        margin-left:0%;
-        margin-bottom:5%;
-        padding:0;
-    }
-    
-    #formulaire ul li input{
-        display:block;
-        
-    }
-    #images ul li {
-        width:100%;
-    }
-    
-    #map{
-        width:95%;
-    
-    }
-    
+#header ul li {
+    display:none;
 }
+    
+#baniere{
+    width:30%;
+    margin-top:10%;  
+}
+            
+#header input{
+    display:none;
+}
+    
+#images ul{
+    padding:0;
+}
+
+#formulaire{
+    width:100%;
+    border-left:none;
+    margin-bottom:5%;
+    padding:0;
+	border-bottom:solid black 1px;
+}
+
+#formulaire h2{
+	text-align:center;
+}
+    
+#formulaire ul li{
+	text-align:center;
+}
+
+#formulaire #email{
+    width:80%;
+}
+
+#formulaire #prenom{
+    width:80%;
+}
+
+#formulaire #nom{
+    width:80%;
+}
+
+#formulaire #area{
+    width:83%;
+}
+
+#formulaire #date{
+    width:80%;
+}
+
+#formulaire #villenaiss{
+    width:80%;
+}
+        
+#formulaire ul li{
+	margin-top:1%;
+}
+
+#images ul li {
+    width:100%;
+}
+    
+#map{
+    width:95%;
+    margin-bottom:5%;
+}
+
+#baniere{
+	margin-top:22%;
+}
+
+#recherche{
+	float:right;
+}
+
+#navigations{	
+	display:none;	
+}
+
+
+
+
+    
 
